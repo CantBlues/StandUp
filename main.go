@@ -17,7 +17,8 @@ var RestTime = 5
 
 func main() {
 	a = app.New()
-	icon, _ := fyne.LoadResourceFromURLString("http://127.0.0.1/standing.png")
+	// icon, _ := fyne.LoadResourceFromURLString("http://127.0.0.1/standing.png")
+	icon, _ := fyne.LoadResourceFromPath("./standing.png")
 	a.SetIcon(icon)
 
 	if desk, ok := a.(desktop.App); ok {
